@@ -1,0 +1,28 @@
+
+@import url<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+@import url
+body{
+    background-color: rgb(125, 244, 101);
+    color: #161717;
+    height:auto;
+    min-height:100vh;
+}
+/* Container styling */
+.container {
+    font-family: 'Roboto';
+    max-width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 2em;
+}
+
+
