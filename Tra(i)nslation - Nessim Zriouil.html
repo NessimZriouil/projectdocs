@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 1 - Lost in Tra(i)nslation</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      color: #003366;
+      width: 100%;
+    }
+
+    /* Knoppen */
+    .btn {
+      background-color: #0072B8;
+      color: white;
+      padding: 12px 18px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      position: absolute;
+      top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #005a91;
+    }
+
+    .back-home-btn {
+      left: 20px;
+    }
+
+    .next-week-btn {
+      left: 210px;
+    }
+
+    .main-content {
+      width: 90%;
+      max-width: 800px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .main-content h1 {
+      color: #004080;
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .main-content p {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 140px;
+      height: auto;
+    }
+
+    /* Foto sectie */
+    .image-list {
+      margin-top: 30px;
+    }
+
+    .image-item {
+      margin-bottom: 25px;
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .image-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .feedback-text {
+      margin-top: 40px;
+      text-align: left;
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Home en Volgende knoppen -->
+  <a href="index.html" class="btn back-home-btn">← Terug naar Home</a>
+  <a href="week2.html" class="btn next-week-btn">Volgende week →</a>
+
+  <img src="SNCB_logo.svg.png" alt="NMBS logo" class="logo">
+
+  <div class="title">Week 1</div>
+
+  <div class="container">
+    <div class="main-content">
+      <h1>Low-fi prototypes</h1>
+      <p>
+        In deze eerste week heb ik me gericht op het onderzoeken van bestaande Belgische treinschermen en het begrijpen van de informatiehiërarchie. 
+        Ik heb de verschillende schermtypes bekeken, zoals perronschermen, wagonschermen en vertrekschermen. 
+        Op deze manier kon ik een overzicht krijgen van hoe reizigers momenteel informatie ontvangen en welke verbeteringen mogelijk zijn.
+      </p>
+
+      <!-- FOTO'S -->
+      <div class="image-list">
+        <div class="image-item">
+          <img src="images%201/low_01.jpg" alt="">
+        </div>
+        <div class="image-item">
+          <img src="images%201/low_02.jpg" alt="">
+        </div>
+        <div class="image-item">
+          <img src="images%201/low_03.jpg" alt="">
+        </div>
+        <div class="image-item">
+          <img src="images%201/low_04.jpg" alt="">
+        </div>
+        <div class="image-item">
+          <img src="images%201/low_05.jpg" alt="">
+        </div>
+        <div class="image-item">
+          <img src="images%201/low_06.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- FEEDBACK TEKST -->
+      <div class="feedback-text">
+        Tijdens het feedbackmoment kreeg ik vooral positieve reacties op de geschreven versie van mijn ontwerp. 
+        De melding met het uitroepteken werd als zeer duidelijk en opvallend ervaren, waardoor belangrijke informatie goed wordt benadrukt. 
+        Ook de interface van de treinschermen werd positief onthaald: de opbouw, leesbaarheid en structuur sluiten goed aan bij de noden van reizigers. 
+        Daarnaast vonden ze het sterk dat ik een oplossing had uitgewerkt om het taalprobleem aan te pakken door middel van vlagpictogrammen, zodat gebruikers eenvoudig een taal kunnen herkennen of selecteren.<br><br>
+        Een belangrijk aandachtspunt was wel dat vlaggen soms verwarrend kunnen zijn, omdat niet altijd meteen duidelijk is welke taal bij welk land hoort. 
+        Dit is dus iets om verder te verfijnen in een volgende iteratie.
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
