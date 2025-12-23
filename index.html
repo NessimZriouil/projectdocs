@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tra(i)nslation - Nessim Zriouil</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+      background: linear-gradient(135deg, hsl(0, 0%, 0%), #144b68);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(2px);
+      z-index: 0;
+    }
+
+    .title {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      z-index: 1;
+      position: relative;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin-top: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-content {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px; 
+    }
+
+    .main-content p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .weeks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    .week-card {
+      text-decoration: none;
+      color: white;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      height: 170px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .week-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+    }
+
+    .week-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .week-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.6)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .info-links-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .info-block {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .info-block:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .info-block h3 {
+      margin-top: 0;
+      color: #144b68;
+    }
+
+    .info-block p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .info-block a {
+      font-size: 14px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info-block a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 32px;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="title">Lost in Tra(i)nslation - Nessim Zriouil</div>
+
+  <div class="container">
+    <div class="main-content">
+
+      <p>
+        Welkom bij mijn projectdocumentatie voor het project “Lost in tra(i)nslation!”  
+        Hier laat ik zien hoe ik Belgische treinschermen duidelijker heb gemaakt voor reizigers en toeristen. Ik startte met low-fidelity schetsen op papier, werkte daarna verder in Figma voor mid-fidelity prototypes, en eindigde met een high-fidelity HTML-versie.  
+        Op deze site kan je mijn leerproces en wekelijkse vooruitgang volgen, van eerste ideeën tot het digitale resultaat.
+      </p>
+
+      <div class="weeks-grid">
+
+        <a href="week1.html" class="week-card"><img src="images/Home/pexels-nizalll-2029886.jpg"><div class="week-overlay">Week 1</div></a>
+        <a href="week2.html" class="week-card"><img src="images/Home/pexels-sachith-hettigodage-685810-1656377.jpg"><div class="week-overlay">Week 2</div></a>
+        <a href="week3.html" class="week-card"><img src="images/Home/pexels-todd-trapani-488382-1777832.jpg"><div class="week-overlay">Week 3</div></a>
+        <a href="week4.html" class="week-card"><img src="images/Home/pexels-jeffrey-czum-254391-2346216.jpg"><div class="week-overlay">Week 4</div></a>
+        <a href="week5.html" class="week-card"><img src="images/Home/pexels-imagevain-2346006.jpg"><div class="week-overlay">Week 5</div></a>
+        <a href="week6.html" class="week-card"><img src="images/Home/pexels-luis-leon-1223645-2569249.jpg"><div class="week-overlay">Week 6</div></a>
+        <a href="week7.html" class="week-card"><img src="images/Home/pexels-thiagomobile-2928780.jpg"><div class="week-overlay">Week 7</div></a>
+        <a href="week8.html" class="week-card"><img src="images/Home/pexels-ethan-sees-1319959-2867110.jpg"><div class="week-overlay">Week 8</div></a>
+        <a href="week9.html" class="week-card"><img src="images/Home/pexels-jonathanborba-3700693.jpg"><div class="week-overlay">Week 9</div></a>
+        <a href="week10.html" class="week-card"><img src="images/Home/pexels-paul-basel-903490-1816710.jpg"><div class="week-overlay">Week 10</div></a>
+        <a href="week11.html" class="week-card"><img src="images/Home/premium_photo-1676122795719-6fa9374a46c5.avif"><div class="week-overlay">Week 11</div></a>
+        <a href="week12.html" class="week-card"><img src="images/Home/AdobeStock_1020715154.jpeg"><div class="week-overlay">Week 12</div></a>
+        <a href="week13.html" class="week-card"><img src="images/Home/AdobeStock_660511369.jpeg"><div class="week-overlay">Week 13</div></a>
+
+      </div>
+
+    </div>
+
+    <div class="info-links-container">
+
+      <div class="info-block">
+        <h3>Over de schrijver</h3>
+        <p>
+          Mijn naam is Nessim Zriouil, student in 1GDM1, met een sterke interesse in graphic design. Ik richt mij op het ontwikkelen van mijn vaardigheden in visuele communicatie en digitale ontwerptechnieken. Dit project geeft mij de kans om creatieve concepten om te zetten in concrete oplossingen en mijn kennis van interface-ontwerp te verdiepen.
+        </p>
+      </div>
+
+      <div class="info-block">
+        <h3>Links</h3>
+        <p><a href="contact.html">Contactpagina</a></p>
+        <p><a href="https://github.com/username" target="_blank">GitHub</a></p>
+        <p><a href="https://username.netlify.app" target="_blank">Netlify</a></p>
+        <p><a href="https://www.figma.com/@username" target="_blank">Figma</a></p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
