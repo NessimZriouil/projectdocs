@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 13 - Verslag & Reflectie</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url("images/Home/AdobeStock_660511369.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(12px);
+      transform: scale(1.05);
+      z-index: -1;
+    }
+
+    /* === USER INFO (RECHTSBOVEN) === */
+    .user-info {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 12px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 4px 8px;
+      border-radius: 6px;
+      z-index: 1000;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      color: #a97609;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      width: 100%;
+    }
+
+    .btn {
+      background-color: #a97609;
+      color: white;
+      padding: 12px 18px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      position: absolute;
+      top: 20px;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #a78a4c;
+    }
+
+    .back-week-btn {
+      left: 20px;
+    }
+
+    .back-home-btn {
+      left: 210px;
+    }
+
+    .main-content {
+      width: 90%;
+      max-width: 900px;
+      background-color: rgba(255,255,255,0.95);
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .main-content h1 {
+      color: #a97609;
+      margin-top: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .main-content p {
+      line-height: 1.9;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .links a {
+      background-color: #a97609;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 5px;
+      display: inline-block;
+    }
+
+    .links a:hover {
+      background-color: #a78a4c;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="week12.html" class="btn back-week-btn">← Vorige week</a>
+  <a href="home.html" class="btn back-home-btn">← Terug naar Home</a>
+
+  <!-- NAAM EN KLASGROEP RECHTSBOVEN -->
+  <div class="user-info">Nessim Zriouil - 1GDM1</div>
+
+  <div class="title">Week 13</div>
+
+  <div class="container">
+    <div class="main-content">
+
+      <h1>Verslag van de afgelopen weken</h1>
+
+      <p>
+        De afgelopen weken heb ik uitgebreid gewerkt aan het project “Lost in Tra(i)nslation”. 
+        Het begon met het analyseren van bestaande treinschermen en het maken van low-fidelity prototypes. 
+        Hierin stond vooral de informatiehiërarchie en de duidelijke weergave van belangrijke informatie centraal. 
+        Tijdens de eerste feedbacksessies kreeg ik waardevolle tips over taalgebruik, iconen en de duidelijkheid van de interface.
+      </p>
+
+      <p>
+        Na de low-fi prototypes ben ik verder gegaan met mid-fidelity prototypes. 
+        In deze fase heb ik mijn ontwerpen digitaal uitgewerkt in Figma en getest op verschillende schermformaten. 
+        Ik heb gelet op visuele hiërarchie, leesbaarheid en consistentie van kleuren en iconen. 
+        Deze iteratie maakte het makkelijker om interacties en navigatie te plannen, wat cruciaal was voor de volgende fase.
+      </p>
+
+      <p>
+        In de daaropvolgende weken heb ik de prototypes verder verfijnd, verbeterd en getest op mobiel gebruik. 
+        In totaal heb ik negen interactieve schermen gemaakt in Figma. 
+        Deze schermen zijn met elkaar gelinkt, waardoor gebruikers kunnen scrollen en klikken tussen verschillende schermen. 
+        Zo bevatte het project een loginscherm, een registratiepagina, een scherm voor het kopen van een treinticket en een interface om een reiziger toe te voegen of aan te passen.
+      </p>
+
+      <p>
+        Gedurende de laatste weken heb ik veel aandacht besteed aan Tailwind CSS. 
+        Ik heb vragen gesteld aan de leerkracht over problemen die ik ondervond en gecontroleerd of de plaatsing van elementen correct en visueel aantrekkelijk was. 
+        Achtergrondafbeeldingen van treinen zijn toegevoegd aan mijn documentatie, zodat de presentatie aantrekkelijker oogt. 
+        Elk detail is zorgvuldig uitgewerkt om een professionele en gebruiksvriendelijke ervaring te bieden.
+      </p>
+
+      <p>
+        Door dit project heb ik niet alleen mijn vaardigheden in Figma en Tailwind CSS versterkt, maar ook mijn inzicht in gebruikerservaring en interface design verbeterd. 
+        Het proces van low-fi naar interactieve mobiele schermen heeft me geleerd hoe belangrijk testen, itereren en feedback vragen is. 
+        Ik heb veel geleerd over het plannen van een project, het structureren van content en het maken van een interface die duidelijk en intuïtief is voor de eindgebruiker.
+      </p>
+
+      <p>
+        Hieronder zijn de links naar mijn projectbestanden en live website voor verdere inzage:
+      </p>
+
+      <div class="links">
+        <a href="https://github.com/NessimZriouil/projectdocs" target="_blank">GitHub project</a>
+        <a href="https://app.netlify.com/teams/nessimoo/projects" target="_blank">Netlify website</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

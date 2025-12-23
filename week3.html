@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 - Lost in Tra(i)nslation</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+
+  <style>
+    /* === BLURRED BACKGROUND IMAGE === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url("images/Home/pexels-todd-trapani-488382-1777832.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(12px);
+      transform: scale(1.05);
+      z-index: -1;
+    }
+
+    /* === BUTTONS === */
+    .btn {
+      background-color: #cf7f3e;
+      color: white;
+      padding: 12px 18px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      position: absolute;
+      top: 20px;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #d09768;
+    }
+
+    .back-week-btn {
+      left: 20px;
+    }
+
+    .next-week-btn {
+      left: 210px;
+    }
+
+    /* === USER INFO (RECHTSBOVEN) === */
+    .user-info {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 12px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 4px 8px;
+      border-radius: 6px;
+      z-index: 1000;
+    }
+
+    /* === TITLE === */
+    .title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      color: #cf7f3e;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      width: 100%;
+    }
+
+    /* === CONTENT === */
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    .main-content {
+      width: 90%;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .main-content h1 {
+      color: #cf7f3e;
+      margin-top: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .main-content p {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* === IMAGES === */
+    .image-list {
+      margin-top: 30px;
+    }
+
+    .image-item {
+      margin-bottom: 25px;
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .image-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="week2.html" class="btn back-week-btn">← Vorige week</a>
+  <a href="week4.html" class="btn next-week-btn">Volgende week →</a>
+
+  <!-- NAAM EN KLASGROEP RECHTSBOVEN -->
+  <div class="user-info">Nessim Zriouil - 1GDM1</div>
+
+  <div class="title">Week 3</div>
+
+  <div class="container">
+    <div class="main-content">
+      <h1>Mid-fidelity prototypes</h1>
+      <p>
+        Deze week heb ik de low-fidelity schetsen omgezet naar mid-fidelity prototypes in Figma. 
+        Ik werkte met drie verschillende schermen in drie formaten, waarbij ik de eerder getekende beelden overdesignede. 
+        Het was interessant om te zien hoe de layouts, kleuren en typografie samenkomen op digitale schermen. 
+        <br><br>
+        Tijdens het proces merkte ik dat kleine aanpassingen, zoals het verplaatsen van informatie en het toevoegen van iconen, 
+        een groot verschil kunnen maken in de gebruikservaring. Ik heb veel geëxperimenteerd met hiërarchie, witruimte en visuele duidelijkheid, 
+        zodat reizigers snel en gemakkelijk de juiste informatie kunnen vinden.  
+        <br><br>
+        Het werken in Figma gaf me ook de mogelijkheid om interacties en knoppen uit te proberen, 
+        waardoor de prototypes al een stuk realistischer aanvoelden dan de papieren schetsen.
+      </p>
+
+      <div class="image-list">
+        <div class="image-item">
+          <img src="images/images_week3/2526_PRTT_ZriouilNessim_Midi-prototypes3.jpg" alt="Mid-fidelity prototype 1">
+        </div>
+        <div class="image-item">
+          <img src="images/images_week3/2526_PRTT_ZriouilNessim_Midi-prototypes1.jpg" alt="Mid-fidelity prototype 2">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

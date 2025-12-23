@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 6 - Eerste HTML in VS Code</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+
+  <style>
+    /* === BLURRED BACKGROUND IMAGE === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url("images/Home/pexels-luis-leon-1223645-2569249.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(12px);
+      transform: scale(1.05);
+      z-index: -1;
+    }
+
+    /* === USER INFO (RECHTSBOVEN) === */
+    .user-info {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 12px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 4px 8px;
+      border-radius: 6px;
+      z-index: 1000;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      color: #002262;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      width: 100%;
+    }
+
+    .btn {
+      background-color: #002262;
+      color: white;
+      padding: 12px 18px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      position: absolute;
+      top: 20px;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #005a94;
+    }
+
+    .back-week-btn {
+      left: 20px;
+    }
+
+    .next-week-btn {
+      left: 210px;
+    }
+
+    .main-content {
+      width: 90%;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .main-content h1 {
+      color: #002262;
+      margin-top: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .main-content p {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .main-content a {
+      color: #0072B8;
+      text-decoration: none;
+    }
+
+    .main-content a:hover {
+      text-decoration: underline;
+    }
+
+    .image-box {
+      margin-top: 30px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    .image-box img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="week5.html" class="btn back-week-btn">← Vorige week</a>
+  <a href="week7.html" class="btn next-week-btn">Volgende week →</a>
+
+  <!-- NAAM EN KLASGROEP RECHTSBOVEN -->
+  <div class="user-info">Nessim Zriouil - 1GDM1</div>
+
+  <div class="title">Week 6</div>
+
+  <div class="container">
+    <div class="main-content">
+      <h1>Eerste HTML in Visual Studio Code</h1>
+
+      <p>
+        Deze week hebben we onze eerste HTML-pagina gebouwd in Visual Studio Code.  
+        Hierin leerden we hoe de basisstructuur werkt zoals <code>&lt;head&gt;</code>, 
+        <code>&lt;body&gt;</code> en verschillende HTML-tags.
+      </p>
+
+      <p>
+        In <strong>styles.css</strong> hebben we gewerkt aan de vormgeving.  
+        We kozen een lettertype via Google Fonts:<br>
+        <a href="https://fonts.google.com" target="_blank">https://fonts.google.com</a>
+      </p>
+
+      <p>
+        Voor het testen van kleur, typografie, witruimte en vooral hoe alles eruitziet, gebruikten we:<br>
+        <a href="https://bpuieditor.netlify.app" target="_blank">https://bpuieditor.netlify.app</a>
+      </p>
+
+      <p>
+        Ook moesten we al weken aanmaken om onze progressie doorheen deze lessen te laten zien. In het begin was het nog wat zoeken, maar door zelf te proberen en te experimenteren  
+        met marges, lettergroottes en layout begon ik HTML steeds beter te begrijpen. Dit is hoe mijn HTML er uit zag na al deze veranderingen:
+      </p>
+
+      <div class="image-box">
+        <img src="images/images_week6/html1.png" alt="Eerste HTML voorbeeld">
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
