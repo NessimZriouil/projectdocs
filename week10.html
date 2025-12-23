@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 10 - Hard Deadline & HTML afronden</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url("images/Home/pexels-paul-basel-903490-1816710.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(12px);
+      transform: scale(1.05);
+      z-index: -1;
+    }
+
+    /* === USER INFO (RECHTSBOVEN) === */
+    .user-info {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 12px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 4px 8px;
+      border-radius: 6px;
+      z-index: 1000;
+    }
+
+    .user-info a {
+      color: #0072B8;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .user-info a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      color: #0072B8;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      width: 100%;
+    }
+
+    .btn {
+      background-color: #0072B8;
+      color: white;
+      padding: 12px 18px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      position: absolute;
+      top: 20px;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #005a94;
+    }
+
+    .back-week-btn {
+      left: 20px;
+    }
+
+    .next-week-btn {
+      left: 210px;
+    }
+
+    .main-content {
+      width: 90%;
+      max-width: 800px;
+      background-color: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .main-content h1 {
+      color: #0072B8;
+      margin-top: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .main-content p {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .example-img {
+      display: block;
+      margin: 30px auto 10px auto;
+      width: 95%;
+      max-width: 750px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="week9.html" class="btn back-week-btn">← Vorige week</a>
+  <a href="week11.html" class="btn next-week-btn">Volgende week →</a>
+
+  <div class="user-info">
+    Nessim Zriouil - 1GDM1 | 
+    <a href="https://github.com/NessimZriouil/projectdocs/blob/main/week10.html" target="_blank">laatst gepubliceerde versie</a>
+  </div>
+
+  <div class="title">Week 10</div>
+
+  <div class="container">
+    <div class="main-content">
+
+      <h1>Hard deadline & HTML afronden</h1>
+
+      <p>
+        In deze les kregen we een harde deadline tegen het einde van de sessie om onze HTML-pagina's volledig af te werken
+        met alles wat we tot nu toe hadden ontwikkeld. Het doel was om alle voorgaande weken netjes samen te voegen en een overzichtelijk resultaat te presenteren.
+      </p>
+
+      <p>
+        Ik heb alle foto's georganiseerd in duidelijke mappen per week en ervoor gezorgd dat elke week overzichtelijk wordt weergegeven.
+        Met de hulp van de leraren, ChatGPT en mijn eigen kennis heb ik een werkend resultaat neergezet. Hoewel het nog niet volledig af is,
+        laat het zien hoe de website eruit zal zien bij de definitieve versie.
+      </p>
+
+      <img src="images/images_week10/afbeeldingstructuur.png" alt="Structuur van HTML Week 10" class="example-img">
+
+      <p>
+        Hieronder zie je hoe ik de structuur van mijn HTML-pagina had opgebouwd en hoe de content georganiseerd werd.
+        Dit gaf een duidelijk overzicht van de layout en hoe elementen zoals afbeeldingen, tekstblokken en knoppen werden geplaatst.
+      </p>
+
+      <img src="images/images_week10/tailwindhtml.png" alt="Tailwind HTML Week 10" class="example-img">
+
+      <p>
+        In het laatste deel van de les heb ik alles overgezet naar Tailwind en gecontroleerd of alles correct werkte. 
+        Ik heb de klassieke CSS-structuur gecombineerd met Tailwind utility classes, zodat ik de voordelen van beide kon gebruiken.
+        Dit laat zien hoe mijn site steeds verder is verfijnd en klaar is om interactief gebruikt te worden.
+      </p>
+
+    </div>
+  </div>
+
+</body>
+</html>
