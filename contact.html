@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Lost in Tra(i)nslation</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+      background: linear-gradient(135deg, hsl(0, 0%, 0%), #144b68);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .title {
+      font-size: 42px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      position: relative;
+    }
+
+    form {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #003366;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #003366;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #0072B8;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005a94;
+    }
+
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #0072B8;
+      color: white;
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .home-btn:hover {
+      background-color: #005a94;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="./index.html" class="home-btn">← Home</a>
+
+  <div class="container">
+    <div class="title">Contact</div>
+
+    <form action="confirmation.html" method="POST">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Versturen</button>
+    </form>
+  </div>
+
+</body>
+</html>
